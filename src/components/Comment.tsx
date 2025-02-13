@@ -6,15 +6,14 @@ interface CommentProps {
 
 const Comment: React.FC<CommentProps> = ({
     children,
-    name="",
+    name = "",
     className = ""
 }) => {
- 
     return (
         <p
-           
-            className={`p-3 bg-navColor m-auto my-2 w-[15rem] text-white rounded-md`}
-        >   <h3>{name}</h3>
+            className={`p-3 bg-navColor m-auto my-2 w-[15rem] text-white rounded-md ${className}`}
+        >
+            <h3>{name}</h3>
             {children}
         </p>
     );

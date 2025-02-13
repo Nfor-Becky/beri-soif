@@ -1,10 +1,9 @@
-import Button from "../../components/Button"
-import { Link } from "react-router-dom"
+import Button from "../../components/Button";
+
 
 const Order = () => {
   return (
-    <div>
-      <div className="">
+    <div className="p-4">
       <div className="flex flex-col justify-between">
         <div className="py-3">
           <h1 className="text-2xl font-bold">Order Management</h1>
@@ -33,9 +32,10 @@ const Order = () => {
           </form>
         </div>
       </div>
-     <table className="mt-4 border-collapse border border-gray-200 w-full rounded-xl">
+      
+      <table className="mt-4 border-collapse border border-gray-200 w-full rounded-xl">
         <thead>
-        <tr>
+          <tr>
             <th className="border border-gray-300 p-2">ID</th>
             <th className="border border-gray-300 p-2">Client Name</th>
             <th className="border border-gray-300 p-2">Product Name</th>
@@ -43,12 +43,13 @@ const Order = () => {
             <th className="border border-gray-300 p-2">Date</th>
             <th className="border border-gray-300 p-2">Actions</th>
           </tr>
-          <tr></tr>
-            </thead>    
-    </table> 
+        </thead>
+        <tbody>
+          {/* Add table rows here */}
+        </tbody>
+      </table> 
     </div>
-    </div>
-  )
+  );
 }
 
-export default Order
+export default Order;
